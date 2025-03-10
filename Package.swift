@@ -1,10 +1,10 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.10
 
 import PackageDescription
 
 var package = Package(
     name: "IBLinter",
-    platforms: [.macOS(.v10_13)],
+    platforms: [.macOS(.v12)],
     products: [
         .executable(
             name: "iblinter", targets: ["IBLinter"]
@@ -22,7 +22,7 @@ var package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/IBDecodable/IBDecodable.git", from: "0.5.0"),
-        .package(url: "https://github.com/jpsim/SourceKitten.git", from: "0.29.0"),
+        .package(url: "https://github.com/jpsim/SourceKitten.git", from: "0.36.0"),
         .package(url: "https://github.com/phimage/XcodeProjKit.git", from: "2.2.0"),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
     ],
